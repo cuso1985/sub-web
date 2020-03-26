@@ -265,9 +265,9 @@ export default {
                   "https://raw.githubusercontent.com/CareyWang/Rules/master/RemoteConfig/customized/maying.ini"
               },
               {
-                label: "Nexitally",
+                label: "rixCloud",
                 value:
-                  "https://raw.githubusercontent.com/CareyWang/Rules/master/RemoteConfig/customized/nexitally.ini"
+                  "https://raw.githubusercontent.com/CareyWang/Rules/master/RemoteConfig/customized/rixcloud.ini"
               },
               {
                 label: "YoYu",
@@ -283,6 +283,11 @@ export default {
                 label: "NyanCAT",
                 value:
                   "https://raw.githubusercontent.com/CareyWang/Rules/master/RemoteConfig/customized/nyancat.ini"
+              },
+              {
+                label: "Nexitally",
+                value:
+                  "https://raw.githubusercontent.com/CareyWang/Rules/master/RemoteConfig/customized/nexitally.ini"
               },
               {
                 label: "贼船",
@@ -337,7 +342,7 @@ export default {
     document.title = "Subscription Converter";
   },
   mounted() {
-    this.form.clientType = "clashr";
+    this.form.clientType = "clash";
     this.notify();
     this.getBackendVersion();
   },
@@ -540,7 +545,8 @@ export default {
     },
     getBackendVersion() {
       this.$axios.get(defaultBackend.substring(0, defaultBackend.length - 5) + '/version').then(res => {
-        this.backendVersion = res.data.replace(/\n$/gm, '');
+        this.backendVersion = res.data.replace(/backend\n$/gm, '');
+        this.backendVersion = this.backendVersion.replace('subconverter', '');
       })
     }
   }
