@@ -213,7 +213,7 @@ const project = "https://github.com/CareyWang/sub-web";
 const remoteConfigSample =
   "https://raw.githubusercontent.com/tindy2013/subconverter/master/base/config/example_external_config.ini";
 const gayhubRelease = "https://github.com/tindy2013/subconverter/releases";
-const defaultBackend = "https://api.cuso1986.tk/sub?";
+const defaultBackend = "http://39.100.6.233:10010/sub?";
 const shortUrlBackend = "https://api.suo.yt/short";
 const configUploadBackend = "https://api.wcc.best/config/upload";
 const tgBotLink = "https://t.me/CareyWong_bot";
