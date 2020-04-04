@@ -366,7 +366,7 @@ export default {
       }
 
       const url = "clash://install-config?url=";
-      window.open(url + encodeURIComponent(this.customSubUrl));
+      window.open(url + encodeURIComponent(this.curtomShortSubUrl !== '' ? this.curtomShortSubUrl : this.customSubUrl));
     },
     surgeInstall() {
       if (this.customSubUrl === "") {
