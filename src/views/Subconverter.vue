@@ -215,7 +215,7 @@ const remoteConfigSample =
 const gayhubRelease = "https://github.com/tindy2013/subconverter/releases";
 const defaultBackend = "https://api.cusoduanpeng.tk/sub?";
 const shortUrlBackend = "https://short.cusoduanpeng.tk/short";
-const configUploadBackend = "https://api.wcc.best/config/upload";
+const configUploadBackend = "https://https://short.cusoduanpeng.tk/config/upload";
 const tgBotLink = "https://t.me/CareyWong_bot";
 
 export default {
